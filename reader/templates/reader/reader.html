@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'reader/style.css' %}" rel="stylesheet">
+    <title>Reader</title>
+</head>
+<body>
+    {{text}}
+    <br><br>
+    <audio src="http://api.voicerss.org/?key=cb81458cbae54174a23c687ba12e8106&src={{text}}&hl={{lang}}" controls></audio>
+</body>
+<script>
+</script>
+</html>
