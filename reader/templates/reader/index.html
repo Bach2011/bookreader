@@ -10,14 +10,9 @@
     <title>PDF Book reader</title>
 </head>
 <body>
-    <form action="{% url 'index' %}" method="POST" enctype="multipart/form-data">
+    <form action="{% url 'index' %}" method="POST">
         {% csrf_token %}
         <input type="text" placeholder="File location" name="location"><br><br>
-        <select name="lang" class="custom-select">
-            <option value="vi-vn">Vietnamese</option>
-            <option value="en-us">English</option>
-        </select>
-        <br><br>
         <input type="submit" class="btn btn-primary">
     </form>
 </body>
